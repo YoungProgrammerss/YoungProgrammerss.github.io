@@ -1,0 +1,135 @@
+
+
+#TutorPageName{
+	background-color:  var(--secondary-color2);
+    color: var(--primary-color); 
+    padding: 0.2em 1em; 
+    display: inline; 
+    margin-left:0.5em;
+
+}
+
+
+
+dt{
+	font-weight:bold;
+	color:var(--primary-color);
+	font-size:1.5em;
+}
+
+dd{
+	font-size:1em;
+}
+
+
+
+.teacherPhoto{
+	display:block;
+	width:10em;
+	height:10em;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+
+.teacherContainer
+{
+
+
+ display:flex;
+ flex-direction:row;
+ justify-content:space-between;
+ align-items:baseline;
+ gap:1vw;
+ height: 50em;
+ overflow: auto;
+ background-color: var(--secondary-color2);
+ background-clip:padding-box;
+ margin-left:1em;
+ margin-right:1em;
+ padding-top:3em;
+
+}
+
+body
+{
+background-clip: border-box;
+background-color: var(--primary-color2);
+
+}
+
+#left
+{
+ display:inline-block;
+  height:5vw;
+  width:5vw;
+}
+
+#right
+{
+ display:inline-block;
+ height:5vw;
+ width:5vw;
+}
+
+
+#scrollhorizontally
+{
+display:flex;
+max-height:60vh;
+border:solid;
+background-color:var(--secondary-color);
+white-space:nowrap;
+overflow-x:scroll;
+
+
+}
+
+#slideRight
+{
+	width: 0;
+	height: 0;
+	border-top: 2em solid transparent;
+	border-left: 3.5em solid var(--secondary-color6);
+	border-bottom: 2em solid transparent;
+	background-color:var(--primary-color2);
+	display: inline-block;
+	float:right;
+	
+
+}
+
+#slideLeft
+{
+	width: 0;
+	height: 0;
+	border-top: 2em solid transparent;
+	border-right: 3.5em solid var(--secondary-color6);
+	border-bottom: 2em solid transparent;
+	background-color:var(--primary-color2);
+	display: inline-block;
+	float:left;
+	
+
+}
+
+#slideLeft:hover,#slideRight:hover{
+	background-color:var(--secondary-color3);
+}
+
+
+
+.teacher
+{
+min-width:17em;
+height:17em;
+text-align:center;
+background-color: var(--secondary-color2);
+margin-right:5em;	
+}
+
+
+
+

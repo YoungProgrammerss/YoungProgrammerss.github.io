@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSStutors.css">
+  <link rel="stylesheet" href="CSSindex.css">
+  <script src="IndexJS.js" ></script>
+  <script src="tutorsJS.js" ></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Tutors</title>
+</head>
+
+<body>
+
+<header>
+<div id="vision">
+<a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+
+<div class="contentWrapper">
+<div class="VisionInfo">
+<h1>Young programmer</h1>
+<p>Our vision is to inspire young minds to master coding and shape tomorrow’s world</p>
+</div>
+
+<div class="nav">
+<nav>
+<a href="admindashboard.html" class="link" accesskey="a"> Administrator dashboard</a>
+<a href="ParentsDashboard.html" class="link" accesskey="p"> Parents dashboard</a>
+<a href="Courses.html" class="link" accesskey="c"> Courses</a>
+<a href="tutors.html" class="link" accesskey="t"> Tutors</a>
+<p>Hello, name</p>
+</nav>
+</div>
+</div>
+</div>
+</header>
+
+<main>
+
+<br>
+
+<ul class="breadCrump">
+<li><a href="index.html" class="link">Home</a></li>
+<li> &#32; Tutor</li>
+</ul>
+
+<br>
+<br>
+<h1 id="TutorPageName">tutors</h1>
+
+
+<label for="sortTutors">Sort by:</label>
+<select id="sortTutors" onchange="sortTutors()">
+<option value="nameAsc">Name A-Z</option>
+<option value="nameDesc">Name Z-A</option>
+</select>
+
+<div class="teacherContainer">
+
+<div id="left">
+<button id="slideLeft" type="button"></button>
+</div>
+
+<div id="scrollhorizontally">
+      
+
+<div class="teacher">
+<img src="images/JessicaIbbott.jpg" alt="JessicaFace" class="teacherPhoto">
+<dl>
+<dt>Tutor's name:</dt>
+<dd>Jessica Ibbott</dd>
+<dt>Area of teaching:</dt>
+<dd>Java coding, math</dd>
+</dl>
+</div>
+
+<div class="teacher">
+<img src="images/HuxleyVictors.jpg" alt="HuxleyFace" class="teacherPhoto">
+<dl>
+<dt>Tutor's name:</dt>
+<dd>Huxley Victors</dd>
+<dt>Area of teaching:</dt>
+<dd>Python Coding, web developing</dd>
+</dl>
+</div>
+
+<div class="teacher">
+<img src="images/KristyRoderick.jpg" alt="KristyFace" class="teacherPhoto">
+<dl>
+<dt>Tutor's name:</dt>
+<dd>Kristy Roderick</dd>
+<dt>Area of teaching:</dt>
+<dd>Java coding</dd>
+</dl>
+</div>
+
+<div class="teacher">
+<img src="images/PepperMason.jpg" alt="PepperFace" class="teacherPhoto">
+<dl>
+<dt>Tutor's name:</dt>
+<dd>Pepper Mason</dd>
+<dt>Area of teaching:</dt>
+<dd>Python coding, game creating</dd>
+</dl>
+</div>
+
+<div class="teacher">
+<img src="images/SharifDabney.jpg" alt="SharifFace" class="teacherPhoto">
+<dl>
+<dt>Tutor's name:</dt>
+<dd>Sharif Dabney</dd>
+<dt>Area of teaching:</dt>
+<dd>Python coding, math</dd>
+</dl>
+</div>
+
+<div class="teacher">
+<img src="images/TattonTowner.jpg" alt="TattonFace" class="teacherPhoto">
+<dl>
+<dt>Tutor's name:</dt>
+<dd>Tatton Towner</dd>
+<dt>Area of teaching:</dt>
+<dd>Java coding, Python coding</dd>
+</dl>
+</div>
+
+</div>
+
+<div id="right">
+<button id="slideRight" type="button"></button>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="footer-content">
+
+<div class="contact-us">
+<h4>Contact us:</h4>
+<ul>
+<li><a href="mailto:YoungProgrammers123@outlook.com"><i class="fa fa-envelope"></i> &nbsp;Email</a> </li>
+<li><a href="#"><i class="fa fa-twitter"></i> &nbsp;X</a></li>
+</ul>
+</div>
+
+<div class="address">
+<h4>Address:</h4>
+<pre>Modern Riyadh Academy
+123 Knowledge Street
+Al Olaya District
+Riyadh 11564
+Kingdom of Saudi Arabia</pre>
+</div>
+
+</div>
+<div class="copyright">
+<p>copyright</p>
+</div>
+</footer>
+
+</body>
+
+</html>

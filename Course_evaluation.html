@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSSindex.css">
+<link rel="stylesheet" href="CSS_CourseEvalPage2.css">
+<script src="IndexJS.js" ></script>
+ <script src="JavaScript_CourseEvaluation.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Course Evaluation</title>
+	
+</head>
+<body>
+
+<header>
+<div id="vision">
+<a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+
+<div class="contentWrapper">
+<div class="VisionInfo">
+<h1>Young programmer</h1>
+<p>Our vision is to inspire young minds to master coding and shape tomorrow’s world</p>
+</div>
+
+<div class="nav">
+<nav>
+<a href="admindashboard.html" class="link" accesskey="a"> Administrator dashboard</a>
+<a href="ParentsDashboard.html" class="link" accesskey="p"> Parents dashboard</a>
+<a href="Courses.html" class="link" accesskey="c"> Courses</a>
+<a href="tutors.html" class="link" accesskey="t"> Tutors</a>
+<p>Hello, name</p>
+</nav>
+</div>
+
+</div>
+</div>
+	
+</header>
+
+<main>
+<br>
+<ul class="breadCrump">
+<li><a href="index.html" class="link">Home</a></li>
+<li><a href="ParentsDashboard.html" class="link">Parents Dashboard</a></li>
+<li>Course Evaluation</li>
+</ul>
+
+
+
+<form class="evaluation">
+<div style="margin: 2em;"></div>	 
+<fieldset>
+<legend>Course Evaluation</legend>
+
+<ul class="evaluationList">
+<li>
+<div class="course-selection">
+<label for="course-dropdown">Choose Course</label>
+<select id="course-dropdown">
+<option value="disabled selected">Select an option</option>
+<option>Introduction to Coding</option>
+<option>Web Development</option>
+<option>Coding with Python</option>
+<option>Minecraft Modding</option>
+<option>Young Creator</option>
+<option>Arduino Basics</option>
+</select>
+</div>
+</li>
+
+ 
+<li>
+<label >Rate the course</label>
+<div class="Starsrating">
+
+<input type ="radio" name="star" id="star5"><label for="star5"></label>		
+<input type ="radio" name="star" id="star4"><label for="star4"></label>		
+<input type ="radio" name="star" id="star3"><label for="star3"></label>		
+<input type ="radio" name="star" id="star2"><label for="star2"></label>		
+<input type ="radio" name="star" id="star1"><label for="star1"></label>		
+</div>
+</li>
+
+<div class="feedback-section">
+<li> <label>Your Feedback About The Course</label> </li>
+<textarea id="Feedbacktextarea" name="Feedbacktextarea"  rows="10" cols="90" placeholder="Write your feedback here..."></textarea> 
+</div>
+
+
+<li class="endButtonslama">
+<input type="submit" value="Submit" class="contentSize">
+<input type="reset" value="Cancel" class="contentSize">
+</li>
+</ul>
+
+</fieldset>
+</form>
+
+</main>
+   
+<footer>
+<div class="footer-content">
+                
+<div class="contact-us">
+<h4>Contact us:</h4>
+<ul>
+<li><a href="mailto:YoungProgrammers123@outlook.com"><i class="fa fa-envelope"></i> &nbsp;Email</a> </li>
+<li><a href="https://x.com/youngprogit312?s=21&t=M60556s0acpN_qpQobQTjw"><i class="fa fa-twitter"></i> &nbsp;X</a></li>
+</ul>
+</div>
+                
+<div class="address">
+<h4>Address:</h4>
+<p>Modern Riyadh Academy<br>
+123 Knowledge Street<br>
+Al Olaya District<br>
+Riyadh 11564<br>
+Kingdom of Saudi Arabia</p>
+</div>
+                
+</div>
+<div class="copyright">
+<p>copyright</p>
+</div>
+</footer>
+   
+</body>
+
+
+</html>

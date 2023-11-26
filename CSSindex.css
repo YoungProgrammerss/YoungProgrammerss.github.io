@@ -1,0 +1,500 @@
+/*------general styles------*/
+* {
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, monospace;
+}
+
+body {
+    background-color: var(--primary-color2);
+}
+
+/*---------------Color themes-------------*/
+:root{
+	--primary-color:#000137;
+	--primary-color2:#C1E3ED;
+	--secondary-color:#78AED3;
+	--secondary-color2:#AAC9DD;
+	--secondary-color3:#007BFF;
+	--secondary-color4:#FFFFFF;
+	--secondary-color5:#ccc;
+	--secondary-color6:#555;
+	--secondary-color7:#d4af37;
+	--secondary-color8:#89ABCB;
+	--secondary-color9:#0056b3;
+	--secondary-color10:#007bff;
+}
+
+.green-theme{
+	--primary-color:#01281A;
+	--primary-color2:#b2d8d8;
+	--secondary-color:#008080;
+	--secondary-color2:#66b2b2;
+	--secondary-color3:#c9ffc7;
+	--secondary-color4:#FFFFFF;
+	--secondary-color5:#ccc;
+	--secondary-color6:#008085;
+	--secondary-color7:#90ee90;
+	--secondary-color8:#8dcb89;
+	--secondary-color9:#30b300;
+	--secondary-color10:#00ffb3;
+	
+}
+
+/*--------------------header--------------*/
+#vision {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#vision a img {
+        max-height: 14.7em;
+        width: 100%; 
+        display: block;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.VisionInfo {
+    flex: 1;
+    padding: 3em;
+    background-color: var(--secondary-color);
+}
+
+.VisionInfo h1, .VisionInfo p {
+    margin: 0;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.nav {
+    flex: 1em;
+    padding: 2em;
+    background-color: var(--secondary-color2);
+}
+
+.nav nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+	margin-left: 2em;
+}
+
+.nav a.link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+.nav a.link:hover {
+    text-decoration: underline;
+    color: var(--secondary-color3);
+}
+
+.nav p {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+/*---------------responsive-----------*/
+
+/* Responsive adjustments for mobile screens */
+@media only screen and (max-width: 600px) {
+    #vision {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #vision a img {
+        max-width: 100%;
+        max-height: 15em;
+    }
+
+    .contentWrapper,
+    .nav nav,
+    .footer-content,
+    .ReviewsContainer,
+    .CourseContainer,
+    .ReviewPost,
+    .left,
+    .right {
+        flex-direction: column;
+    }
+
+    .ReviewPost {
+        min-width: 100%;
+        margin-right: 0;
+    }
+
+    .left,
+    .right {
+        display: none !important;
+    }
+	
+.nav nav {
+	margin-left: 0em;
+}
+
+
+}
+
+/* Responsive adjustments for tablet screens */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav nav {
+    justify-content: space-between;
+	align-items: center;
+    }
+
+    #vision {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    #vision a img {
+        max-width: 100%;
+        max-height: 15em;
+    }
+	
+	    .nav a.link {
+        margin-right: 1em;
+    }
+	
+	.nav a.link:not(:first-child) {
+    margin-right: 3em; 
+    }
+	
+	.nav p{
+		margin-left: 3em;
+	}
+	
+	    .nav {
+        flex: 1;
+        padding: 2em;
+    }
+
+    .ReviewPost,
+    .CourseContainer {
+        min-width: 50%;
+    }
+
+    .left,
+    .right {
+        display: none !important;
+    }
+
+    .contentWrapper,
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+/* Larger screens (min-width: 901px) and (max-width: 1024px) */
+@media only screen and (min-width: 901px) and (max-width: 1024px)   {
+    #vision {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; 
+        box-sizing: border-box;
+    }
+
+    #vision a img {
+        max-height: 15em;
+        width: 100%; 
+        display: block;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .VisionInfo {
+        flex: 2;
+        padding: 3em;
+		padding-left:7em;
+		padding-right:7em;
+        box-sizing: border-box;
+    }
+
+    .nav {
+        flex: 1;
+        padding: 2em;
+        width: 100%; 
+		padding-left:7em;
+		padding-right:7em;
+        box-sizing: border-box;
+    }
+
+    .nav a.link {
+        margin-right: 1em;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 2em 0;
+    }
+
+    .contact-us,
+    .address {
+        flex: 1;
+        padding: 0 2em;
+    }
+
+    .ReviewsContainer,
+    .CourseContainer {
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .ReviewPost {
+        min-width: 20%;
+        margin-right: 2em;
+    }
+
+    .scrollhorizontally {
+        justify-content: space-between;
+    }
+
+    body {
+        font-size: 1em;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0.5em;
+        margin-bottom: 0.9em;
+    }
+
+    .breadCrump {
+        padding: 1em;
+    }
+}
+
+
+/*--------------footer-------------*/
+footer {
+    background-color: var(--secondary-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70em;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.contact-us,
+.address {
+    flex: 1;
+    padding: 0 1em;
+    text-align: center;
+    position: relative;
+}
+
+.contact-us::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0.05em;
+    background-color: var(--secondary-color5);
+}
+
+.address h4,
+.contact-us h4 {
+    margin-bottom: 1.5em;
+    font-size: 0.9em;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.address {
+    padding-top: 1em;
+    font-size: 1em;
+    text-align: center;
+}
+
+.address pre {
+    text-align: center;
+}
+
+.contact-us {
+    padding-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    text-align: center;
+}
+
+.contact-us ul {
+    display: inline-block;
+    text-align: left;
+    list-style-type: none;
+}
+
+li a {
+    color: var(--primary-color);
+    padding: 0.1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+li a:hover {
+    background-color: var(--secondary-color2);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: bolder;
+    color: var(--primary-color);
+    padding-bottom: 0.2em;
+}
+
+/*------------Review/courses-----------------*/
+#ReviewsName,
+#CoursessName {
+    background-color: var(--secondary-color2);
+    color: var(--primary-color);
+    padding: 0.2em 1em;
+    display: inline;
+    margin-left: 0.5em;
+}
+
+.ReviewPost p {
+    font-size: 1em;
+    color: var(--primary-color);
+}
+
+.ReviewPhoto {
+    display: block;
+    max-width: 100%; /* Adjusted to ensure the photo displays correctly */
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CourseContainer,
+.ReviewsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1em; /* Adjusted the spacing for responsiveness */
+    height: 50em;
+    overflow: auto;
+    background-color: var(--secondary-color2);
+    background-clip: padding-box;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 3em;
+}
+
+.ReviewPost {
+    min-width: 17em;
+    height: auto;
+    text-align: center;
+    background-color: var(--secondary-color2);
+    margin-right: 5em;
+    padding: 1em;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left, .right {
+    display: inline-block;
+    height: 5vw;
+    width: 5vw;
+}
+
+.scrollhorizontally {
+    display: flex;
+    max-height: 60vh;
+    border: solid;
+    background-color: var(--secondary-color);
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.slideRight, .slideLeft {
+    width: 0;
+    height: 0;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+    background-color: var(--primary-color2);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.slideRight {
+    border-left: 3.5em solid var(--secondary-color6);
+}
+
+.slideLeft {
+    border-right: 3.5em solid var(--secondary-color6);
+}
+
+.slideLeft:hover,
+.slideRight:hover {
+    background-color: var(--secondary-color3);
+}
+
+.star-rating1 {
+    color: var(--secondary-color7);
+}
+
+/*-----------------------breadcrump-----------------------*/
+ul.breadCrump {
+    list-style-type: none;
+    margin-left: 1em;
+}
+
+ul.breadCrump li {
+    display: inline;
+    font-size: 1em;
+    color: var(--primary-color);
+}
+
+ul.breadCrump li+li::before {
+    content: ">";
+}
+
+ul.breadCrump li a {
+    color: var(--primary-color);
+}
+
+ul.breadCrump li a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color3);
+}
+
+/*------------------button-----------------*/
+#customizeButton {
+    background-color: var(--primary-color);
+    color: var(--secondary-color4);
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.2em 1em;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#customizeButton:hover {
+    background-color: var(--secondary-color2);
+    color: var(--primary-color);
+}

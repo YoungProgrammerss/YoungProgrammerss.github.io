@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Course enrollment</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSSindex.css">
+  <link rel="stylesheet" href="courseEnrollment.css">
+  <script src="IndexJS.js" ></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="registerScript.js" ></script>
+</head>
+
+<body>
+<header>
+<div id="vision">
+<a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+
+<div class="contentWrapper">
+<div class="VisionInfo">
+<h1>Young programmer</h1>
+<p>Our vision is to inspire young minds to master coding and shape tomorrow’s world</p>
+</div>
+
+<div class="nav">
+<nav>
+<a href="admindashboard.html" class="link" accesskey="a"> Administrator dashboard</a>
+<a href="ParentsDashboard.html" class="link" accesskey="p"> Parents dashboard</a>
+<a href="Courses.html" class="link" accesskey="c"> Courses</a>
+<a href="tutors.html" class="link" accesskey="t"> Tutors</a>
+<p>Hello, name</p>
+</nav>
+</div>
+</div>
+</div>
+</header>
+
+<main>
+<br>
+<ul class="breadCrump">
+<li><a href="index.html" class="link">Home</a></li>
+<li><a href="ParentsDashboard.html" class="link">Parents Dashboard</a></li>
+<li> &#32; Course enrollment form</li>
+</ul>
+<br>
+<br>
+
+<div class="evaluationContent">
+<form class="evaluationForm" onsubmit="return validateForm()">
+<fieldset>
+<legend>Course enrollment page</legend>
+<ul class="evaluationList">
+  <li>
+    <label>Choose which kid to enroll:</label> 
+    <br>
+    <select id="ChooseKids" name="ChooseKids" class="dropdown"> 
+    <option value="" disabled selected>Choose kid</option>
+    </select>
+    </li>
+
+<li>
+<label>Choose which course:</label><br> Prerequisite:
+<select id="Prerequisite" name="Prerequisite" class="dropdown">
+<option value="" disabled selected>Prerequisite</option>
+<option value="All">All</option>
+</select>
+Tutor:
+<select id="Tutor" name="Tutor" class="dropdown">
+<option value="" disabled selected>Tutor</option>
+</select>
+<button type="button" onclick="filterCourses()" class="contentSize">Filter</button>
+<ul class="evaluationListCourses" id="courseList">
+</ul>
+</li>
+
+<li>
+<label>Payment form:</label>
+<select id="PaymentForm" name="PaymentForm" class="contentSize">
+<option value="" disabled selected>Choose payment form</option>
+<option value="Card">Card</option>
+<option value="Cash">Cash</option>
+</select>
+</li>
+
+<li id="AgreeCheckbox">
+<br>
+<input type="checkbox" name="agree" value="agree" checked class="contentSize"> I agree to enroll my kid to the following course
+</li>
+</ul>
+<div class="endButtons">
+<ul>
+<li><input type="submit" value="Submit" class="contentSize"></li>
+<li><input type="reset" value="Cancel" class="contentSize"></li>
+</ul>
+</div>
+</fieldset>
+</form>
+</div>
+</main>
+
+<footer>
+<div class="footer-content">
+<div class="contact-us">
+<h4>Contact us:</h4>
+<ul>
+<li><a href="mailto:YoungProgrammers123@outlook.com"><i class="fa fa-envelope"></i> &nbsp;Email</a> </li>
+<li><a href="https://x.com/youngprogit312?s=21&t=M60556s0acpN_qpQobQTjw"><i class="fa fa-twitter"></i> &nbsp;X</a></li>
+</ul>
+</div>
+
+<div class="address">
+<h4>Address:</h4>
+<p>Modern Riyadh Academy<br>
+123 Knowledge Street<br>
+Al Olaya District<br>
+Riyadh 11564<br>
+Kingdom of Saudi Arabia</p>
+</div>
+</div>
+<div class="copyright">
+<p>copyright</p>
+</div>
+</footer>
+
+
+</body>
+
+</html>

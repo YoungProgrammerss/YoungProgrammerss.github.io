@@ -1,0 +1,144 @@
+
+.evaluationForm{
+	font-size:1.5em;
+}
+
+ul{
+list-style-type:none;
+}
+
+
+
+
+.coursePic{
+	width:4em;
+	height:4em;
+	 
+}
+
+
+
+.evaluationContent{
+
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em;
+    gap: 2%;
+    width: 100%;
+ 
+}
+
+.evaluationList label{
+	font-weight:bold;
+}
+
+select{
+    width: 20em;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5em;
+    outline: none;
+}
+
+
+
+#AgreeCheckbox{
+	text-align:center;
+	padding-left:5em;
+	
+}
+
+.endButtons ul{
+	display:flex;
+	justify-content:center;
+	gap:2.5em;
+	font-size:1.5em;
+	padding-left:5em;
+}
+
+
+input[type="submit"],
+input[type="reset"],button[type='button'] {
+    background-color: var(--primary-color);
+    color: var(--secondary-color4);
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.2em 1em;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,button[type='button']:hover {
+    background-color: var(--secondary-color2);
+	color:var(--primary-color);
+}
+
+
+fieldset {
+    background-color: var(--secondary-color2);
+    border-color: var(--secondary-color2);
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 10em;
+
+}
+
+legend {
+    font-size: 1.5em;
+	padding-bottom:1em;
+    font-weight: bold;
+    background-color: var(--secondary-color2);
+
+}
+
+ul.evaluationList > li {
+    margin-bottom: 2em;
+}
+
+    .courseListItem {
+      display: flex;
+      align-items: center;
+    }
+
+    .courseLabel {
+      margin-left: 10px;
+    }
+	
+	
+#enrollmentInfo {
+    background-color: var(--secondary-color2);
+    border: solid;
+	border-color:var(--primary-color);
+    margin:2em;
+
+}
+	
+	#enrollmentInfo::before {
+    content:"Child's name:";
+    font-weight:bold;
+	margin-left:0.5em;
+
+}
+
+#enrollmentInfo ul {
+    list-style-type: disc;
+	list-style-position:inside;
+	margin-left:0.5em;
+
+}
+
+#enrollmentInfo p {
+   margin-left:0.5em;
+
+}
+
+
+#enrollmentInfo ul::before {
+    content:"Child's Courses/Tutors:";
+    font-weight:bold;
+
+}

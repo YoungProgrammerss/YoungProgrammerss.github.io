@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parents Dashboard</title>
+<link rel="stylesheet" href="admindashboard.css">
+<link rel="stylesheet" href="CSSindex.css">
+<script src="IndexJS.js" ></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+
+window.addEventListener('DOMContentLoaded', function () {
+        displayCurrentWeekDate();
+    });
+
+
+    function displayCurrentWeekDate() {
+    var currentDate = new Date();
+    var options = { weekday: 'long', month: 'long', day: 'numeric' };
+
+    var startOfWeek = new Date(currentDate);
+    startOfWeek.setDate(currentDate.getDate() - currentDate.getDay());
+
+    var formattedStartDate = startOfWeek.toLocaleDateString('en-US', options);
+
+    var dateDisplay = document.getElementById('currentWeekDate');
+    dateDisplay.textContent = 'Current Week\'s Start Date: ' + formattedStartDate;
+}
+
+
+
+function displayRestKids(link) {
+    var newKids = ['Ahmad Ali', 'Alia alsaleh', 'Sali Mohamd', 'Rwan Ahmmad'];
+    var dlElement = link.closest('dl');
+    var courseList = dlElement.querySelector('ul');
+
+    newKids.forEach(function (childName) {
+        var listItem = document.createElement('li');
+        listItem.textContent = childName;
+        courseList.appendChild(listItem);
+    });
+
+    var moreLink = dlElement.querySelector('.more-link');
+    moreLink.style.display = 'none';
+}
+
+  
+
+
+</script>
+</head>
+<body>
+
+<header>
+<div id="vision">
+<a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+    
+<div class="contentWrapper">
+<div class="VisionInfo">
+<h1>Young programmer</h1>
+<p>Our vision is to inspire young minds to master coding and shape tomorrow’s world</p>
+</div>
+    
+<div class="nav">
+<nav>
+<a href="admindashboard.html" class="link" accesskey="a"> Administrator dashboard</a>
+<a href="ParentsDashboard.html" class="link" accesskey="p"> Parents dashboard</a>
+<a href="Courses.html" class="link" accesskey="c"> Courses</a>
+<a href="tutors.html" class="link" accesskey="t"> Tutors</a>
+<p>Hello, name</p>
+</nav>
+</div>
+
+</div>
+</div>
+</header>
+
+<br>
+<ul class="breadCrump">
+<li><a href="index.html" class="link">Home</a></li>
+<li> &#32; Admin dashboard</li>
+</ul>
+<br>
+<p id="currentWeekDate"></p>
+<br>
+<br>
+<main>
+      
+
+<section>
+<h2>Children Registered:</h2>
+<ul>
+<li>Sara</li>
+<li>Ali</li>
+<li>Mohammad</li>
+<li>Alia</li>
+<li>Mahmod</li>
+<li>Sali</li>
+<li>Saleh</li>
+<li>Raid</li>
+<li>Habib</li>
+<li>Reem</li>
+</ul>
+</section>
+<section>
+  <h2>Courses:</h2>
+  <dl>
+      <dt>Course 1 (Instructor: Jessica Ibbott)</dt>
+      <dd>
+          <ul>
+              <li>Sara</li>
+              <li>Ali</li>
+              <li>Mohammad</li>
+              <li>Alia</li>
+              <li>Hala</li>
+              <li><a href="#" class="more-link" onclick="displayRestKids(this)">More...</a></li>
+          </ul>
+      </dd>
+  </dl>
+  <br>
+  <dl>
+      <dt>Course 2 (Instructor: Huxley Victors)</dt>
+      <dd>
+          <ul>
+              <li>Sali</li>
+              <li>Saleh</li>
+              <li>Mohammad</li>
+              <li>Reem</li>
+              <li>Rahma</li>
+              <li><a href="#" class="more-link" onclick="displayRestKids(this)">More...</a></li>
+          </ul>
+      </dd>
+  </dl>
+  <dl>
+    <dt>Course 3 (Instructor: Alia Victors)</dt>
+    <dd>
+        <ul>
+            <li>Maria</li>
+            <li>Salamh</li>
+            <li>Mohammad</li>
+            <li>Rahma</li>
+            <li>Rahma</li>
+            <li><a href="#" class="more-link" onclick="displayRestKids(this)">More...</a></li>
+        </ul>
+    </dd>
+</dl>
+</section>
+
+
+
+<section>
+<h2>Tutors:</h2>
+<ul>
+<li>
+<a href="schedule.html">Huxley Victors</a><br> (Teaches: Introduction to coding, Web development, Coding with python)
+</li>
+<li>
+<a href="schedule2.html">Jessica Ibbott</a><br> (Teaches: Web development, Minecraft Modding, Young creator)
+</li>
+<li>
+<a href="schedule.html">Kristy Roderick</a><br> (Teaches: Introduction to coding, Web development, Coding with python)
+</li>
+<li>
+<a href="schedule2.html">Pepper Mason</a><br> (Teaches: Web development, Minecraft Modding, Young creator)
+</li>
+<li>
+<a href="schedule.html">Sharif Dabney</a><br> (Teaches: Introduction to coding, Web development, Coding with python)
+</li>
+<li>
+<a href="schedule2.html">Tatton Towner</a><br> (Teaches: Web development, Minecraft Modding, Young creator)
+</li>
+    </ul>
+</section>
+
+</main>
+<br><br><br><br>
+
+<footer>
+<div class="footer-content">
+                
+<div class="contact-us">
+<h4>Contact us:</h4>
+<ul>
+<li><a href="mailto:YoungProgrammers123@outlook.com"><i class="fa fa-envelope"></i> &nbsp;Email</a> </li>
+<li><a href="https://x.com/youngprogit312?s=21&t=M60556s0acpN_qpQobQTjw"><i class="fa fa-twitter"></i> &nbsp;X</a></li>
+</ul>
+</div>
+                
+<div class="address">
+<h4>Address:</h4>
+<p>Modern Riyadh Academy<br>
+123 Knowledge Street<br>
+Al Olaya District<br>
+Riyadh 11564<br>
+Kingdom of Saudi Arabia</p>
+</div>
+                
+</div>
+<div class="copyright">
+<p>copyright</p>
+</div>
+ </footer>
+</body>
+</html>

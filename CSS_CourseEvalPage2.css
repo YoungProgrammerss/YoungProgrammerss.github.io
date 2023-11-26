@@ -1,0 +1,136 @@
+.evaluation{
+	display: flex;
+    flex-wrap: wrap;
+	justify-content:center;
+    padding: 1em;
+    gap: 2%;
+    width: 100%;
+	
+}
+
+ul.evaluationList {
+    list-style-type: none;	
+}
+
+ul.evaluationList > li {
+    margin-bottom: 2em;
+}
+
+fieldset {
+    background-color: var(--secondary-color2);
+    border-color: var(--secondary-color2);
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+	width:100%;
+	padding-top:5em;
+}
+	
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: var(--secondary-color2);
+}
+
+.feedback-section{
+	padding-top:5em;
+}
+
+
+label {
+	font-size: 1.5em ;
+}
+
+select {
+    font-size: 0.8em;
+    padding: 0.7em;  
+    width: 12em; 
+    border: 0.1em solid var(--primary-color);  
+    border-radius: 1em; 
+}
+
+textarea {
+	margin-top:1.5em;
+	padding:1em;
+	font-size: 1em;
+
+}
+
+/*-------------Buttons-------------*/
+
+.endButtonslama{
+  display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    font-size: 1.5em;
+	padding-top:5em;
+	gap: 1em;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: var(--primary-color);
+    color: var(--secondary-color4);
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.2em 1em;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+	
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color: var(--secondary-color2);
+	color:var(--primary-color);
+}
+
+
+/*-------------Star rating-------------*/
+
+.Starsrating {
+	position: absolute;
+	left: 8.5em;
+	padding-top:5em;
+	transform: translate(-50%, -50%);
+	display: flex;
+}
+
+.Starsrating input {
+	display: none;
+
+}
+
+.Starsrating label{
+	display: block;
+	cursor: pointer;
+	width: 35px;
+}
+
+.Starsrating label::before  {
+	content: '\f005';
+	font-family: fontAwesome;
+	position:relative;
+	display:block;
+	font-size:35px;
+	color: var(--primary-color);
+}
+
+.Starsrating label::after  {
+	content: '\f005';
+	font-family: fontAwesome;
+	position:absolute;
+	display:block;
+	font-size:35px;
+	color: var(--secondary-color10);
+	bottom:0;
+	opacity:0;
+	transition: .5s;
+	text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.Starsrating label:hover:after,
+.Starsrating input:checked ~ label:after  { 
+	opacity:1;
+}
